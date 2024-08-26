@@ -6,7 +6,7 @@ public class Main {
         int number;
         int i = 1;
         int cont = 1;
-        int contAux = 1;
+        int contAux;
 
         System.out.println("Favor ingrese un numero");
         number = sc.nextInt();
