@@ -11,13 +11,7 @@ public class Main {
         System.out.println("Favor ingrese un numero");
         number = sc.nextInt();
         while (i <= number ) {
-
-            if (i % 2 == 0) {
-                System.out.print(".");
-            } else {
-                System.out.print("*");
-            }
-
+            System.out.print((i % 2 == 0) ? "." : "*");
             i++;
         }
 
@@ -37,6 +31,17 @@ public class Main {
                 contAux++;
             }
             cont++;
+        }
+
+        for (int row = 1; row <= number; row++) {
+            System.out.println();
+            for (int col = 1; col <= number; col++) {
+                if (row == 1 || row == number || col == 1 || col == number) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
         }
     }
 }
